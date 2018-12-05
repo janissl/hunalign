@@ -15,12 +15,12 @@
 #ifdef WIN32
 
 #define EXTNAMESPACE std
-#include <hash_map>
+#include <unordered_map>
 
 #else
 
 #define EXTNAMESPACE __gnu_cxx
-#include <ext/hash_map>
+#include <unordered_map>
 
 #endif
 

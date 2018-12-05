@@ -13,6 +13,7 @@
 #include "networkFlow.h"
 
 #include <portableHash.h>
+#include <algorithm>
 #include <cassert>
 #include <iostream>
 
@@ -115,8 +116,8 @@ double NetworkWithFlow::dfs( int s, int t, std::vector<int>& path, bool justWith
   // hanem Ford-Fulkerson.
 
   path.clear();
-  typedef EXTNAMESPACE::hash_map<int,int> ReMap;
-  typedef EXTNAMESPACE::hash_map<int,double> NodeValueMap;
+  typedef EXTNAMESPACE::unordered_map<int,int> ReMap;
+  typedef EXTNAMESPACE::unordered_map<int,double> NodeValueMap;
   ReMap reMap;
   NodeValueMap nodeValueMap;
 

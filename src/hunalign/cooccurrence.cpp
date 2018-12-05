@@ -63,7 +63,7 @@ public:
   }
 };
 
-typedef EXTNAMESPACE::hash_map< BiWord, int, BiWordHash > CooccurenceMap_HashVersion;
+typedef EXTNAMESPACE::unordered_map< BiWord, int, BiWordHash > CooccurenceMap_HashVersion;
 typedef std::map< BiWord, int > CooccurenceMap_MapVersion;
 typedef CooccurenceMap_HashVersion CooccurenceMap;
 
